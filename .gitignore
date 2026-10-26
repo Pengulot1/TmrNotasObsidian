@@ -1,0 +1,7 @@
+# Obsidian: estado local que cambia constantemente
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+.trash/
+.DS_Store
+Thumbs.db
