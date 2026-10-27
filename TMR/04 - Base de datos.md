@@ -10,14 +10,14 @@ TMR usa **PostgreSQL**, y el backend accede a ella con **Entity Framework Core**
 
 ## Esquemas y tablas principales
 
-| Área (prefijo) | Para qué | Tablas destacadas |
-| --- | --- | --- |
-| Administración (`TblAdministracion*`) | Personas, empleados, clientes, catálogos | `Persona`, `Empleado`, `EmpleadoContrato`, `Lider`, `Cliente`, `Catalogo`, `CatalogoDetalle`, `Cargo` |
-| Autenticación (`TblAutenticacion*`) | Usuarios y seguridad | `Usuario`, `Rol`, `Permiso`, `RolPermiso`, `UsuarioRol`, `RefreshToken`, `Sesion`, `TokenBlacklist`, `PasswordReset`, `PasswordHistorial`, `AuditLog`, `Modulo` |
-| Time Report (`TblTimeReport*`) | Lo central: horas y proyectos | `ActividadDiaria`, `Proyecto`, `AsignacionProyecto`, `TipoActividad`, `TipoProyecto`, `Feriado`, `ProyeccionHoras` |
-| Inventario (`TblInventario*`) | Equipos y compras | `Equipo`, `Factura`, `DetalleFactura`, `Proveedor`, `AsignacionEquipo`, `ReparacionEquipo`, `BajaEquipo` |
-| Auditoría (`TblAuditoria*`) | Historial de cambios | `Empleado`, `Equipo`, `SesionUsuario`, `HistoricoGeneral` |
-| Notificación | Avisos y eventos | `notificacion_fecha_corte`, `notificacion_envio`, `evento_outbox` |
+| Área (prefijo)                        | Para qué                                 | Tablas destacadas                                                                                                                                               |
+| ------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Administración (`TblAdministracion*`) | Personas, empleados, clientes, catálogos | `Persona`, `Empleado`, `EmpleadoContrato`, `Lider`, `Cliente`, `Catalogo`, `CatalogoDetalle`, `Cargo`                                                           |
+| Autenticación (`TblAutenticacion*`)   | Usuarios y seguridad                     | `Usuario`, `Rol`, `Permiso`, `RolPermiso`, `UsuarioRol`, `RefreshToken`, `Sesion`, `TokenBlacklist`, `PasswordReset`, `PasswordHistorial`, `AuditLog`, `Modulo` |
+| Time Report (`TblTimeReport*`)        | Lo central: horas y proyectos            | `ActividadDiaria`, `Proyecto`, `AsignacionProyecto`, `TipoActividad`, `TipoProyecto`, `Feriado`, `ProyeccionHoras`                                              |
+| Inventario (`TblInventario*`)         | Equipos y compras                        | `Equipo`, `Factura`, `DetalleFactura`, `Proveedor`, `AsignacionEquipo`, `ReparacionEquipo`, `BajaEquipo`                                                        |
+| Auditoría (`TblAuditoria*`)           | Historial de cambios                     | `Empleado`, `Equipo`, `SesionUsuario`, `HistoricoGeneral`                                                                                                       |
+| Notificación                          | Avisos y eventos                         | `notificacion_fecha_corte`, `notificacion_envio`, `evento_outbox`                                                                                               |
 
 Confirmados en el código como esquemas de PostgreSQL: `administracion`, `auditoria` y `notificacion`. Las demás áreas siguen el mismo patrón de nombres.
 
