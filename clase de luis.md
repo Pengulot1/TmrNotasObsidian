@@ -10,3 +10,4 @@ ya se dice que esta obsoleto el viejo mvc
 
 
 ARQUITECTURA EN CAPAS 
+investigar que es para que seriviria un servicio como ipublicservice 
